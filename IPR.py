@@ -7,9 +7,9 @@ Created on Sun Oct  6 20:51:57 2019
 
 #ctrl+1 to comment/uncomment
 import numpy as np
-import random
+import scipy as sp
 import matplotlib.pyplot as plt
-import math
+
 def ipr():
     ratio = 0.6
     d = 1
@@ -17,7 +17,7 @@ def ipr():
     M = np.zeros((n,n))
     #M = np.identity(n)
     for i in range(0,n-1):
-        M[i, i+1] = d + ratio *random.uniform(-1, 1)
+        M[i, i+1] = d + ratio *sp.random.uniform(-1, 1)
         M[i+1,i] = M[i,i+1]
     #print ("this is M\n\n", M)
     eigenvalues, eigenvectors = np.linalg.eig(M)
@@ -37,7 +37,7 @@ def ipr():
         for b in range(0,n):
             powerFourSum = powerFourSum + eigenvectors[b,a]**4
         
-        iprElement = (1/(math.pi**0.5)) * 1/(powerFourSum)
+        iprElement = (1/(sp.math.pi**0.5)) * 1/(powerFourSum)
         
         IPRList.append(iprElement)
 

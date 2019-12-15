@@ -6,7 +6,7 @@ Created on Sun Oct  6 23:25:46 2019
 """
 import numpy as np
 import matplotlib.pyplot as plt
-from SD import sd
+#from SD import sd
 from IPR import ipr
 allSDList =[]
 allIPR =[]
