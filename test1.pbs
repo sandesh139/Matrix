@@ -54,7 +54,7 @@ cd $PBS_O_WORKDIR
 # Now, run your program.  Just change the below filename to run a 
 # different program. 
 ########################################################################
-mpirun -machinefile $PBS_NODEFILE -np 8 python simulation.py
+mpirun -machinefile $PBS_NODEFILE -np 8 python simulation1.py
 ########################################################################
 ########################################################################
 

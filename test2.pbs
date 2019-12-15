@@ -7,7 +7,7 @@
 #PBS -lnodes=1:ppn=8
 
 ## This is the max run-time allowed  hr:min:sec
-#PBS -l walltime=02:00:00 
+#PBS -l walltime=02:30:00 
 
 ## This is the filename for all printed output from your code
 #PBS -N list1
@@ -54,7 +54,7 @@ cd $PBS_O_WORKDIR
 # Now, run your program.  Just change the below filename to run a 
 # different program. 
 ########################################################################
-mpirun -machinefile $PBS_NODEFILE -np 8 python simulation.py
+mpirun -machinefile $PBS_NODEFILE -np 8 python simulation2.py
 ########################################################################
 ########################################################################
 

@@ -22,13 +22,13 @@ def zerolistmaker(n):
 #    f.close()
 Partition = np.linspace(0,200,2000)    
 datas = zerolistmaker(len(Partition))   
-for i in range(0,15000):
+for i in range(0,20000):
     allIPR = ipr()
     sortedList = np.searchsorted(Partition,allIPR)
     frequency = np.bincount(sortedList)[1:]
     for i in range(0,len(frequency)):
         datas[i] = datas[i] + frequency[i]        
-np.savetxt('binned.txt', datas, delimiter=',',fmt='%1.0f') 
+np.savetxt('binned22.txt', datas, delimiter=',',fmt='%1.0f') 
 print("this is sum of datas ", sum(datas))
 
 #np.savetxt('iprlist.txt', allIPR, delimiter =',')
