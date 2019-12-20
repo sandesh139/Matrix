@@ -21,7 +21,7 @@ def zerolistmaker(n):
 #    f.close()
 Partition = np.linspace(0,200,2000)    
 datas = zerolistmaker(len(Partition))   
-for i in range(0,100):
+for i in range(0,20000):
     allSD = sd()
     sortedList = np.searchsorted(Partition,allSD)
     frequency = np.bincount(sortedList)[1:]
@@ -29,7 +29,7 @@ for i in range(0,100):
         datas[i] = datas[i] + frequency[i]        
 np.savetxt('binned3.txt', datas, delimiter=',',fmt='%1.0f') 
 print("this is sum of datas ", sum(datas))
-plt.plot(datas)
+plt.plot(datas[0:750])
 plt.savefig('plot3.png')
 #np.savetxt('iprlist.txt', allIPR, delimiter =',')
 #np.savetxt('sdlist.txt',allSDList, delimiter= ',')
