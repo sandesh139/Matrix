@@ -5,7 +5,7 @@ Created on Sun Dec 15 12:17:28 2019
 @author: Sandesh
 """
 
-#Information on files
+# Information on files
 
  - binned.txt file has binned data obtained from 15,000 samples of 200*200 matrix
  - binned1.txt file has binned data obtained from 15,000 samples of 200*200 matrix
