@@ -21,7 +21,7 @@ def zerolistmaker(n):
 #    f.close()
 Partition = np.linspace(0,200,2000)    
 datas = zerolistmaker(len(Partition))   
-for i in range(0,15000):
+for i in range(0,100):
     allSD = sd()
     sortedList = np.searchsorted(Partition,allSD)
     frequency = np.bincount(sortedList)[1:]

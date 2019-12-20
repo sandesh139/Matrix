@@ -30,7 +30,7 @@ for i in range(0,100):
 np.savetxt('binned1.txt', datas, delimiter=',',fmt='%1.0f') 
 print("this is sum of datas ", sum(datas))
 plt.plot(datas[0:750])
-plt.savefig('plot1.png')
+#plt.savefig('plot1.png')
 #np.savetxt('iprlist.txt', allIPR, delimiter =',')
 #np.savetxt('sdlist.txt',allSDList, delimiter= ',')
 #plt.hist(allSDList)
