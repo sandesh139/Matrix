@@ -38,7 +38,7 @@ def sd():
         variance = 0
         for b in range(0,n):
             variance = variance + ((b+1-listMean[a])**2) * (eigenvectors[b,a]**2) 
-        rootvariance = variance**0.5
+        rootvariance =2* variance**0.5
         SDList.append(rootvariance)
 
     return SDList
