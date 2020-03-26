@@ -17,8 +17,5 @@ out = np.divide(mergeData, 10000000)
 sumBin = sum(mergeData)
 partitioned = out[0:250]
 plt.plot(partitioned)
-<<<<<<< HEAD
-plt.savefig('plot1.png')
-=======
-plt.savefig('plotMerge.png')
->>>>>>> baa1d6b2aa17b865a77b1ddd52b4e2402e541b3b
+plt.savefig('plotMerge1.png')
+
